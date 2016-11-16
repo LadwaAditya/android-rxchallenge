@@ -63,18 +63,20 @@ public class MainScreenPresenter implements MainScreenContract.Presenter {
                     @Override
                     public void onCompleted() {
                         Log.d(TAG, "OnComplete");
+                        mView.showComplete();
 
                     }
 
                     @Override
                     public void onError(Throwable e) {
                         Log.d(TAG, e.toString());
+                        mView.showError(retrofit.toString());
 
                     }
 
                     @Override
                     public void onNext(List<Result> results) {
-                      mView.showPosts(results);
+                        mView.showPosts(results);
                     }
                 });
 

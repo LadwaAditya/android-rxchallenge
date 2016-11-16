@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.example.aditya.nyuyu.Nyuyu;
 import com.example.aditya.nyuyu.R;
@@ -51,11 +52,12 @@ public class MainActivity extends AppCompatActivity implements MainScreenContrac
 
     @Override
     public void showError(String message) {
-
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void showComplete() {
+        Toast.makeText(this, "Loaded", Toast.LENGTH_SHORT).show();
 
     }
 }
