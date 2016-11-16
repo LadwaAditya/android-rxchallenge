@@ -19,9 +19,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by Aditya on 21-Apr-16.
- */
+
 @Module
 public class NetModule {
     String mBaseUrl;

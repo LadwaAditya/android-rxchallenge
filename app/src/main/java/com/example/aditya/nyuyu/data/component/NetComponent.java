@@ -9,9 +9,6 @@ import javax.inject.Singleton;
 import dagger.Component;
 import retrofit2.Retrofit;
 
-/**
- * Created by Aditya on 21-Apr-16.
- */
 @Singleton
 @Component(modules = {AppModule.class, NetModule.class})
 public interface NetComponent {
