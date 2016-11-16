@@ -74,8 +74,7 @@ public class MainScreenPresenter implements MainScreenContract.Presenter {
 
                     @Override
                     public void onNext(List<Result> results) {
-                        for (Result r : results)
-                            Log.d(TAG, String.valueOf(r.getCostInCredits()));
+                      mView.showPosts(results);
                     }
                 });
 
