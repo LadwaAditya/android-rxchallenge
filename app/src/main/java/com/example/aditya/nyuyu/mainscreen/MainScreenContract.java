@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface MainScreenContract {
     interface View {
-        void showPosts(List<Result> posts);
+        void showPosts(List<Result> results);
 
         void showError(String message);
 
